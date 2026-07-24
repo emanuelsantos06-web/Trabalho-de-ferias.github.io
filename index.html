@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tênis de Mesa (Ping Pong)</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
+
         header {
-            background-color: #0077cc;
+            background-color: #1e3a5f;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
-            background-color: #005fa3;
+            background-color: #2d5c8a;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: white;
-            margin: 0 10px;
+            margin: 10px;
             text-decoration: none;
             font-weight: bold;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+
         section {
             padding: 20px;
             margin: 10px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 10px;
         }
+
+        h2 {
+            color: #1e3a5f;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #16304d;
+        }
+
         footer {
-            background-color: #0077cc;
+            background-color: #1e3a5f;
             color: white;
             text-align: center;
             padding: 15px;
@@ -46,11 +77,12 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Tênis de Mesa (Ping Pong)</h1>
-    <p>Conheça tudo sobre esse esporte incrível!</p>
+    <p>Aprenda tudo sobre o esporte!</p>
 </header>
 
 <nav>
@@ -59,62 +91,108 @@
     <a href="#tecnicas">Técnicas</a>
     <a href="#materiais">Materiais</a>
     <a href="#comojogar">Como Jogar</a>
+    <a href="#cadastro">Cadastro</a>
 </nav>
 
 <section id="regras">
     <h2>Regras Oficiais</h2>
-    <ul>
-        <li>As partidas são disputadas em sets de 11 pontos.</li>
-        <li>É necessário vencer por pelo menos 2 pontos de diferença.</li>
-        <li>Cada jogador saca duas vezes seguidas.</li>
-        <li>O saque deve quicar primeiro no lado do sacador e depois no lado adversário.</li>
-        <li>Não é permitido encostar na mesa com a mão livre.</li>
-    </ul>
+    <p>
+        O tênis de mesa é jogado entre dois jogadores (simples) ou quatro jogadores (duplas).
+        O objetivo é fazer a bola passar sobre a rede e tocar na mesa do adversário sem que ele consiga devolvê-la corretamente.
+    </p>
+    <p>
+        Cada partida é composta por sets de até 11 pontos. Para vencer um set, é necessário ter pelo menos 2 pontos de vantagem.
+    </p>
+    <p>
+        O saque deve ser feito com a bola sendo lançada para cima e batida de forma visível.
+        O jogador deve alternar o saque a cada dois pontos.
+    </p>
 </section>
 
 <section id="historia">
     <h2>História do Esporte</h2>
     <p>
-        O tênis de mesa surgiu na Inglaterra no final do século XIX como uma versão adaptada do tênis de campo.
-        Inicialmente era jogado de forma recreativa, mas rapidamente ganhou popularidade e se tornou um esporte competitivo.
-        Hoje, é um dos esportes mais praticados no mundo, especialmente na Ásia.
+        O tênis de mesa surgiu na Inglaterra no final do século XIX como uma versão adaptada do tênis tradicional.
+        Inicialmente era jogado como um passatempo em ambientes fechados.
+    </p>
+    <p>
+        O esporte evoluiu rapidamente e, em 1926, foi fundada a Federação Internacional de Tênis de Mesa (ITTF).
+        Desde então, o esporte se tornou extremamente popular, especialmente na Ásia.
+    </p>
+    <p>
+        O tênis de mesa tornou-se esporte olímpico em 1988, nos Jogos de Seul.
     </p>
 </section>
 
 <section id="tecnicas">
     <h2>Técnicas e Golpes</h2>
+    <p>
+        Existem diversos golpes no tênis de mesa:
+    </p>
     <ul>
-        <li><strong>Forehand:</strong> Golpe feito com a frente da raquete.</li>
-        <li><strong>Backhand:</strong> Golpe feito com o verso da raquete.</li>
-        <li><strong>Topspin:</strong> Golpe com efeito para frente.</li>
-        <li><strong>Slice:</strong> Golpe com efeito para trás.</li>
-        <li><strong>Saque:</strong> Fundamental para iniciar o ponto com vantagem.</li>
+        <li><strong>Forehand:</strong> golpe feito com a parte frontal da mão.</li>
+        <li><strong>Backhand:</strong> golpe feito com o lado oposto da mão.</li>
+        <li><strong>Topspin:</strong> golpe com efeito para frente que faz a bola girar.</li>
+        <li><strong>Slice:</strong> golpe com efeito contrário (para baixo).</li>
+        <li><strong>Smash:</strong> golpe forte e rápido para finalizar o ponto.</li>
     </ul>
+    <p>
+        A prática dessas técnicas melhora a precisão, controle e velocidade do jogador.
+    </p>
 </section>
 
 <section id="materiais">
     <h2>Guia de Materiais</h2>
+    <p>
+        Para jogar tênis de mesa, você precisa de:
+    </p>
     <ul>
-        <li><strong>Raquete:</strong> Pode variar em velocidade, controle e efeito.</li>
-        <li><strong>Bola:</strong> Geralmente de plástico, tamanho padrão 40mm.</li>
-        <li><strong>Mesa:</strong> Deve ter dimensões oficiais e rede central.</li>
-        <li><strong>Rede:</strong> Divide a mesa em duas partes iguais.</li>
+        <li><strong>Raquete:</strong> composta por madeira e borracha.</li>
+        <li><strong>Bola:</strong> geralmente feita de plástico leve.</li>
+        <li><strong>Mesa:</strong> com dimensões oficiais e rede no meio.</li>
+        <li><strong>Rede:</strong> separa os dois lados da mesa.</li>
     </ul>
+    <p>
+        A escolha da raquete é importante, pois influencia no controle e na velocidade do jogo.
+    </p>
 </section>
 
 <section id="comojogar">
     <h2>Passo a Passo de Como Jogar</h2>
     <ol>
-        <li>Posicione-se corretamente em frente à mesa.</li>
-        <li>Realize o saque respeitando as regras.</li>
-        <li>Responda aos golpes do adversário mantendo a bola em jogo.</li>
-        <li>Tente dificultar o retorno com efeitos e velocidade.</li>
-        <li>Marque pontos quando o adversário errar.</li>
+        <li>Segure a raquete corretamente.</li>
+        <li>Fique em posição de prontidão.</li>
+        <li>Realize o saque lançando a bola para cima.</li>
+        <li>Tente manter a bola em jogo devolvendo corretamente.</li>
+        <li>Use diferentes golpes e estratégias para vencer o ponto.</li>
     </ol>
+    <p>
+        Com prática e dedicação, você pode evoluir rapidamente no esporte.
+    </p>
+</section>
+
+<section id="cadastro">
+    <h2>Cadastrar-se para aprender tênis de mesa!</h2>
+
+    <form>
+        <label>Seu nome:</label>
+        <input type="text" placeholder="Digite seu nome">
+
+        <label>Digite seu e-mail:</label>
+        <input type="email" placeholder="Digite seu e-mail">
+
+        <label>Telefone:</label>
+        <input type="tel" placeholder="Digite seu telefone">
+
+        <label>Por que nós contatar:</label>
+        <textarea placeholder="Explique seu interesse"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
 <footer>
-    <p>Desenvolvido por Emanuel Gonçalves Santos</p>
+    <p>Site criado por Emanuel Gonçalves Santos</p>
     <p>Colégio Inez Vicente Borocz</p>
 </footer>
 
